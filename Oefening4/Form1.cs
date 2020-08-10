@@ -52,7 +52,7 @@ namespace Oefening4
         {
             userLijst[selectedIndex].Voornaam = tbVoornaam.Text;
             VulLijst();
-
+            cbMijnComboBox.ResetText();
         }
 
         private void tbFamilienaam_Leave(object sender, EventArgs e)

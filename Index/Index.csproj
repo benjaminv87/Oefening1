@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00B9BEB2-5432-4B74-B898-5089B9361075}</ProjectGuid>
+    <ProjectGuid>{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Oefening3</RootNamespace>
-    <AssemblyName>Oefening3</AssemblyName>
+    <RootNamespace>Index</RootNamespace>
+    <AssemblyName>Index</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -78,6 +78,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oefening1\Oefening1.csproj">
+      <Project>{5fcec5c6-2c85-48ed-813f-1e2e4e8f4c26}</Project>
+      <Name>Oefening1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oefening2\Oefening2.csproj">
+      <Project>{69f8012c-cf3b-431a-8198-38326fc5d0f8}</Project>
+      <Name>Oefening2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oefening3\Oefening3.csproj">
+      <Project>{00b9beb2-5432-4b74-b898-5089b9361075}</Project>
+      <Name>Oefening3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oefening4\Oefening4.csproj">
+      <Project>{5cee24d9-efa7-4b93-8fe6-9cddfa5c6d85}</Project>
+      <Name>Oefening4</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

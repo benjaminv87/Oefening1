@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening3", "Oefening3\Oefe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening4", "Oefening4\Oefening4.csproj", "{5CEE24D9-EFA7-4B93-8FE6-9CDDFA5C6D85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Index", "Index\Index.csproj", "{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5CEE24D9-EFA7-4B93-8FE6-9CDDFA5C6D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CEE24D9-EFA7-4B93-8FE6-9CDDFA5C6D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CEE24D9-EFA7-4B93-8FE6-9CDDFA5C6D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F335EEC7-58F4-4A04-9422-0F2C7A4F13BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
