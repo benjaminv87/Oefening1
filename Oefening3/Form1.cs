@@ -17,21 +17,22 @@ namespace Oefening3
         {
             InitializeComponent();
         }
-
+        public List<string> namenLijst = new List<string>();
         private void btnMijnKnop_Click(object sender, EventArgs e)
         {
-            VulLijst(tbMijnTextBox.Text);
+            lbMijnLijst.Items.Clear();
+            foreach (var item in namenLijst)
+            {
+                if (item.ToLower().Contains(tbMijnTextBox.Text.ToLower()))
+                {
+                    lbMijnLijst.Items.Add(item);
+                }
+            }
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            VulLijst("");
-        }
-        public void VulLijst(string text)
-        {
-            lbMijnLijst.Items.Clear();
-            List<string> namenLijst = new List<string>();
             using (StreamReader reader = new StreamReader("namen.txt"))
             {
                 while (!reader.EndOfStream)
@@ -41,12 +42,11 @@ namespace Oefening3
             }
             foreach (var item in namenLijst)
             {
-                if (item.Contains(text))
-                {
+
                     lbMijnLijst.Items.Add(item);
-                }
 
             }
         }
+
     }
 }
