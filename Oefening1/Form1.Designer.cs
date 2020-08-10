@@ -43,14 +43,14 @@
             // 
             // tbMijnTextBox
             // 
-            this.tbMijnTextBox.Location = new System.Drawing.Point(13, 115);
+            this.tbMijnTextBox.Location = new System.Drawing.Point(139, 13);
             this.tbMijnTextBox.Name = "tbMijnTextBox";
             this.tbMijnTextBox.Size = new System.Drawing.Size(120, 20);
             this.tbMijnTextBox.TabIndex = 1;
             // 
             // btnMijnKnop
             // 
-            this.btnMijnKnop.Location = new System.Drawing.Point(13, 142);
+            this.btnMijnKnop.Location = new System.Drawing.Point(139, 39);
             this.btnMijnKnop.Name = "btnMijnKnop";
             this.btnMijnKnop.Size = new System.Drawing.Size(120, 23);
             this.btnMijnKnop.TabIndex = 2;
@@ -60,14 +60,19 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnMijnKnop;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(274, 121);
             this.Controls.Add(this.btnMijnKnop);
             this.Controls.Add(this.tbMijnTextBox);
             this.Controls.Add(this.lbMijnLijst);
+            this.MaximumSize = new System.Drawing.Size(290, 160);
+            this.MinimumSize = new System.Drawing.Size(290, 160);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,14 +37,16 @@
             this.cbMijnComboBox.FormattingEnabled = true;
             this.cbMijnComboBox.Location = new System.Drawing.Point(12, 12);
             this.cbMijnComboBox.Name = "cbMijnComboBox";
-            this.cbMijnComboBox.Size = new System.Drawing.Size(121, 21);
+            this.cbMijnComboBox.Size = new System.Drawing.Size(168, 21);
             this.cbMijnComboBox.TabIndex = 0;
             // 
             // btnMijnKnop
             // 
             this.btnMijnKnop.Location = new System.Drawing.Point(12, 40);
+            this.btnMijnKnop.MaximumSize = new System.Drawing.Size(170, 25);
+            this.btnMijnKnop.MinimumSize = new System.Drawing.Size(170, 25);
             this.btnMijnKnop.Name = "btnMijnKnop";
-            this.btnMijnKnop.Size = new System.Drawing.Size(121, 23);
+            this.btnMijnKnop.Size = new System.Drawing.Size(170, 25);
             this.btnMijnKnop.TabIndex = 1;
             this.btnMijnKnop.Text = "Verwijder uit de lijst";
             this.btnMijnKnop.UseVisualStyleBackColor = true;
@@ -54,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(192, 69);
             this.Controls.Add(this.btnMijnKnop);
             this.Controls.Add(this.cbMijnComboBox);
             this.Name = "Form1";

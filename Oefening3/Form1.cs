@@ -20,14 +20,7 @@ namespace Oefening3
         public List<string> namenLijst = new List<string>();
         private void btnMijnKnop_Click(object sender, EventArgs e)
         {
-            lbMijnLijst.Items.Clear();
-            foreach (var item in namenLijst)
-            {
-                if (item.ToLower().Contains(tbMijnTextBox.Text.ToLower()))
-                {
-                    lbMijnLijst.Items.Add(item);
-                }
-            }
+
 
         }
 
@@ -48,5 +41,16 @@ namespace Oefening3
             }
         }
 
+        private void tbMijnTextBox_TextChanged(object sender, EventArgs e)
+        {
+            lbMijnLijst.Items.Clear();
+            foreach (var item in namenLijst)
+            {
+                if (item.ToLower().Contains(tbMijnTextBox.Text.ToLower()))
+                {
+                    lbMijnLijst.Items.Add(item);
+                }
+            }
+        }
     }
 }

@@ -22,8 +22,20 @@ namespace Oefening1
             if (tbMijnTextBox.Text != "")
             {
                 lbMijnLijst.Items.Add(tbMijnTextBox.Text);
-
+                tbMijnTextBox.Focus();
             }
+            if (lbMijnLijst.Items.Count >= 5)
+            {
+                btnMijnKnop.Enabled = false;
+                tbMijnTextBox.Enabled = false;
+                tbMijnTextBox.Clear();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tbMijnTextBox.Focus();
+
         }
     }
 }

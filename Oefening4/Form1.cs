@@ -19,6 +19,7 @@ namespace Oefening4
 
         }
         public List<user> userLijst = new List<user>();
+        public int selectedIndex=0;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -44,17 +45,19 @@ namespace Oefening4
             tbFamilienaam.Visible = true;
             tbVoornaam.Text = geselecteerdeUser.Voornaam;
             tbFamilienaam.Text = geselecteerdeUser.Achternaam;
-        }
+            selectedIndex = cbMijnComboBox.SelectedIndex;
+    }
 
         private void tbVoornaam_Leave(object sender, EventArgs e)
         {
-            userLijst[cbMijnComboBox.SelectedIndex].Voornaam = tbVoornaam.Text;
+            userLijst[selectedIndex].Voornaam = tbVoornaam.Text;
             VulLijst();
+
         }
 
         private void tbFamilienaam_Leave(object sender, EventArgs e)
         {
-            userLijst[cbMijnComboBox.SelectedIndex].Achternaam = tbFamilienaam.Text;
+            userLijst[selectedIndex].Achternaam = tbFamilienaam.Text;
             VulLijst();
         }
     }
